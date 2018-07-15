@@ -129,7 +129,7 @@ public class WebDriverServiceImpl extends WebDriverListener implements WebDriver
 	}
 
 	public void verifyPartialText(WebElement ele, String expectedText) {
-		// TODO Auto-generated method stub
+		System.out.println();
 
 	}
 
@@ -143,7 +143,6 @@ if (equals==true) {
 }
 
 	}
-
 	public void verifyPartialAttribute(WebElement ele, String attribute, String value) {
 		// TODO Auto-generated method stub
 
@@ -227,4 +226,8 @@ if (equals==true) {
 		ele.getTagName();
 	}
 
+	public void getCurrentUrl() {
+		driver.getCurrentUrl();
+		
+	}
 }
