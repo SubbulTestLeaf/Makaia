@@ -214,5 +214,17 @@ if (equals==true) {
 		builder.click().perform();
 
 	}
+	
+	/*
+	Learn Git
+	
+	
+	
+	*/
+	
+	public void getCurrentPage(WebElement ele)
+	{
+		ele.getTagName();
+	}
 
 }
