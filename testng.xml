@@ -3,7 +3,7 @@
 <suite name="Suite">
   <test name="CreateAndEdit">
     <classes>
-      <class name="tests.EditLead"/>
+     <!--  <class name="tests.EditLead"/> -->
       <class name="tests.CreateAccount"/>
     </classes>
   </test> <!-- CreateAndEdit -->

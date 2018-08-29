@@ -31,13 +31,13 @@ public class CreateLead extends PreAndPost{
 	@Test(dataProvider="SIT")
 	//@Test(groups="smoke")
 	public void createLead(String cName, String fName, String lName ) {
-	new MyHomePage().LeadsClick()
+	/*new MyHomePage().LeadsClick()
 		.clickCreateLeads()
-		.typeCmpnyName(cName).typeFirstName(fName).typeLastName(lName).CreateLeadSubmit();
+		.typeCmpnyName(cName).typeFirstName(fName).typeLastName(lName).CreateLeadSubmit();*/
 		//new MyViewLeadsPage()
 
 		
-		/*WebElement eleCreateLead = locateElement("link", "Create Lead");
+		WebElement eleCreateLead = locateElement("link", "Create Lead");
 		click(eleCreateLead);
 		WebElement eleCompName = locateElement("id", "createLeadForm_companyName");
 		type(eleCompName,cName);
@@ -45,7 +45,7 @@ public class CreateLead extends PreAndPost{
 		type(eleFirstName,fName);
 		WebElement eleLastName = locateElement("id", "createLeadForm_lastName");
 		type(eleLastName,lName);	
-		WebElement elephoneAreaCode = locateElement("id", "createLeadForm_primaryPhoneAreaCode");
+		/*WebElement elephoneAreaCode = locateElement("id", "createLeadForm_primaryPhoneAreaCode");
 		type(elephoneAreaCode, aCode);
 
 		WebElement elephonenum = locateElement("id", "createLeadForm_primaryPhoneNumber");
@@ -56,9 +56,10 @@ public class CreateLead extends PreAndPost{
 		selectDropDownUsingVisibleText(eleDropDownSource, "Direct Mail");
 
 		WebElement eleDropIndex = locateElement("id", "createLeadForm_marketingCampaignId");
-		selectDropDownUsingIndex(eleDropIndex,2 );
+		selectDropDownUsingIndex(eleDropIndex,2 );*/
+		
 		WebElement eleSubCreateLead = locateElement("name", "submitButton");
-		click(eleSubCreateLead);*/
+		click(eleSubCreateLead);
 	}
 
 

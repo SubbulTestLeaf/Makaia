@@ -27,6 +27,8 @@ public class ReadExcel {
 			for (int j = 0; j < lastCellNum; j++) {
 				XSSFCell cell = row.getCell(j);
 				String value = cell.getStringCellValue();
+				
+				
 				System.out.println(value);
 				data[i-1][j]=value;
 			}

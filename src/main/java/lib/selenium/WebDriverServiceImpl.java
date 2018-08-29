@@ -64,7 +64,7 @@ public class WebDriverServiceImpl extends WebDriverListener implements WebDriver
 		try {
 			ele.getText();
 		} catch (NoSuchElementException e) {
-			System.err.println("The text is "+ele+ "not present in the ");
+			System.err.println("The text is "+ele+ "not present in the page");
 		}
 		return null;
 	}
@@ -134,13 +134,13 @@ public class WebDriverServiceImpl extends WebDriverListener implements WebDriver
 	}
 
 	public void verifyExactAttribute(WebElement ele, String attribute, String value) {
-boolean equals = ele.getAttribute(attribute).equals(value);
-if (equals==true) {
-	System.out.println("The attribute is "+value+" same as value ");
-}else
-{
-	System.out.println("The attaribute"+value+" is NOT same as value");
-}
+		boolean equals = ele.getAttribute(attribute).equals(value);
+		if (equals==true) {
+			System.out.println("The attribute is "+value+" same as value ");
+		}else
+		{
+			System.out.println("The attaribute"+value+" is NOT same as value");
+		}
 
 	}
 	public void verifyPartialAttribute(WebElement ele, String attribute, String value) {
@@ -169,7 +169,7 @@ if (equals==true) {
 		try {
 			switchToFrame(ele);
 		} catch (NoSuchFrameException e) {
-			System.err.println("The given frame doesnot contain frame");
+			System.err.println("The given frame doesnot contain frame window");
 		}
 	}
 
@@ -213,14 +213,14 @@ if (equals==true) {
 		builder.click().perform();
 
 	}
-	
+
 	/*
 	Learn Git
-	
-	
-	
-	*/
-	
+
+
+
+	 */
+
 	public void getCurrentPage(WebElement ele)
 	{
 		ele.getTagName();
@@ -228,6 +228,12 @@ if (equals==true) {
 
 	public void getCurrentUrl() {
 		driver.getCurrentUrl();
-		
+
+	}	
+	public void getLocation(WebElement ele)
+	{
+		ele.getText();
 	}
+
 }
+

@@ -60,6 +60,7 @@ public abstract class Reports {
 		snapNumber = takeSnap();
 		try {
 			img = MediaEntityBuilder.createScreenCaptureFromPath("./../Reports/images/"+snapNumber+".png").build();
+			
 		} catch (IOException e) {			
 		}
 		

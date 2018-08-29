@@ -173,4 +173,16 @@ public class WebDriverListener extends Reports implements WebDriverEventListener
 		return number;
 	}
 
+	@Override
+	public void afterGetText(WebElement arg0, WebDriver arg1, String arg2) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void beforeGetText(WebElement arg0, WebDriver arg1) {
+		// TODO Auto-generated method stub
+		
+	}
+
 }

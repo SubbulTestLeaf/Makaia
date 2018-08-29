@@ -47,13 +47,13 @@ public class PreAndPost extends WebDriverServiceImpl {
 		click(eleCRM);
 		click(locateElement("link", "Leads"));
 	}
-	/*@DataProvider(name="SIT")
+	@DataProvider(name="SIT")
 	public String[][] getdata() throws IOException
 	{
 		ReadExcel excel = new ReadExcel();
 		String[][] createLeadData = excel.readExcelData(sheeetName);
 		return createLeadData;
-	}*/
+	}
 	/*@DataProvider(name="editdata")
 	public String[][] getdata() throws IOException
 	{
@@ -68,13 +68,13 @@ public class PreAndPost extends WebDriverServiceImpl {
 		String[][] editLeadData = excel.readExcelData(sheeetName);
 		return editLeadData;
 	}*/
-	@DataProvider(name="mergeId")
+	/*@DataProvider(name="mergeId")
 	public String[][] getdata() throws IOException
 	{
 		ReadExcel excel = new ReadExcel();
 		String[][] editLeadData = excel.readExcelData(sheeetName);
 		return editLeadData;
-	}
+	}*/
 	/*@DataProvider(name="DeleteRecords")
 	public String[][] getdata() throws IOException
 	{
